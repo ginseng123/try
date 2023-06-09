@@ -1,170 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>웹페이지 청첩장</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
-    *{
-        font-family: 'Dongle', sans-serif;
-    }
-.bg {
- background-image: url('https://cdn.pixabay.com/photo/2020/02/20/17/57/flower-4865379__340.png');
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: 100% 100%;
-}
-    #title{
-        color:burlywood;
-        font-size: 100px;
-        text-align: center;
-    }
-    .text{ 
-        color:burlywood;
-         font-size: 30px;
-        text-align: center;
-        margin-top: 0px;
-    }
-    .text1{
-        color:burlywood;
-        font-size: 35px;
-        text-align: center;
-        margin-top: 30px;
-        font-weight:bold;
-    }
-    .text2{
-        color:burlywood;
-        font-size: 35px;
-        text-align: center;
-        margin-top: 20px;
-        font-weight:bold;
-    }
-    .card-group{
-        margin-top: 70px;
-    }
-    .card-title{
-        color:burlywood;
-        font-size: 100px;
-        font-weight: bold;
-    }
-    .card-text{
-        color:burlywood;
-        font-size: 40px;
-        margin-top:20px;
-    }
-    .card-text1{
-        color:burlywood;
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .card-text12{
-        color: burlywood;
-        font-size: 20px;
-    }
-    .btn{
-        width: 400px;
-        height:200px;
-        color: burlywood;
-        font-size: 50px;
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>생활 안전요령</title>
+	<link href ="css\real1.css" type="text/css" rel ="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href ="css\real1_mediaquery.css">
+	<script src ="js\real1.js"></script>
+</head>
+<body>
+	<div class = "wrap">   
+		<div class = "header_wrap">
+			<div id = "header_banner" onmouseover ="dropdown_out(this)">
+				
+			</div>
+			<div id = "header_menu">
+					<a id ="header_logo" href ="index.html"><img src ="images\logo.png" alt ="로고" onmouseover ="dropdown_out(this)"></a>
+					<ul id ="header_mainmenu" onmouseover ="dropdown(this)" >
+						<li id ="submenu"><a id ="submenu_content"href = "html\real2_1.html">대처요령[산]</a></li>
+						<li id ="submenu"><a id ="submenu_content"href = "html\real3_1.html">대처요령[바다]</a></li>
+						<li id ="submenu"><a id ="submenu_content"href = "html\real4_1.html">대처요령[일상]</a></li>
+						<li id ="submenu"><a id ="submenu_content"href = "html\real5_1.html">대처요령[화재]</a></li>
+					</ul>
+				</div>
+				<div id = "mainmenu_sub" style = "display: none;" onmouseout="dropdown_out(this)" onmouseover ="dropdown(this)">
+					<div id ="void"><p id = "void_content">바로가기 메뉴</p></div>
+						<ul id = "sub_1" >
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real2_1.html">뱀에게 물렸을때</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real2_2.html">벌에게 쏘였을 때</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real2_3.html">버섯 구분법</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real2_4.html">산행 안전사고 발생시</a></li>
+						</ul>
+						<ul id ="sub_2">
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real3_1.html">바다에 빠진 경우</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real3_2.html">햇빛에 의한 화상</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real3_3.html">해파리 피해</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real3_4.html">심폐소생술</a></li>
 
-        border: 2px solid burlywood;
-        border-radius: 100px;
-
-        margin-top: 50px;
-        margin-left:0px;
-
-        align-items:center;
-        justify-content:center;
-    }
-    .btn:hover{
-        border: 10px solid burlywood;
-    }
-  </style>
-  <body class="bg">
-    <h1 id="title">INVITATION</h1>
-    <div class="text">
-      <div >
-        서로가 마주 보며 다져온 사랑을 
-      </div>
-      <div>이제 함께 한 곳을 바라보며</div>
-      <div>걸어갈 수 있는 큰 사랑으로 키우고자 합니다.</div>
-      <div >
-        저희 두 사람이 사랑의 이름으로 
-      </div>
-      <div>지켜나갈 수 있게 앞날을 축복해 주시면
-        감사하겠습니다.</div>  
-    </div>
-    <div class="text1">
-        <div >의 아들 </div>
-      <div >의 딸 </div>
-    </div>
-    <div class="text2">
-        <div>20oo년 oo월 oo일 토요일 오전 oo시 oo분</div>
-    <div>ooooooooooooo홀</div>
-    </div>
-    <div class="card-group">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><축의금관련></h5>
-            <p class="card-text"> 신랑 측 : 국민 ooooooooooo</p>
-            <p class="card-text"> 신부 측 : 우리 ooooooooooo</p>
-          </div>
-          <div class="card-footer"></div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">예식장 위치</h5>
-            <p class="card-text">ooooooooooo홀 TEL 043-241-0003</p>
-            <p class="card-text">청주시 oo구 oo읍 ooo로 400</p>
-            <a
-              href="https://map.naver.com/v5/search/%EB%A9%94%EB%A6%AC%EB%8B%A4%20%EC%9B%A8%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98/place/1970791550?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=14.63,0,0,0,dh"
-              target="_blank"
-            >
-              <button class="btn">예식장 주소</button></a
-            >
-          </div>
-          <div class="card-footer"></div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">오시는 길</h5>
-            <p class="card-text1">1. 자가용 이용시</p>
-            <p class="card-text12">
-              네비게이션 - "충청북도 청주시 청원구 내수읍 충청대로 400"입력 
-            </p><p class="card-text12">- 중부, 경부 방면에서 오실 경우 오창IC 진입방법</p>
-            <p class="card-text12">
-              오창 IC에서 청주방면 > 오동교차로에서 좌회전 > 구성교차로에서 우회전
-              > 200M 직진 후 좌회전 > 메리다웨딩컨벤션
-            </p>
-            <p class="card-text1">2. 대중교통 이용시</p>
-            <p class="card-text12">청주가경터미널에서 출발시</p>
-            <p class="card-text12">
-              도보 3분 > 시외버스정류장에서 승차(105번,105-1번 버스) > 구성
-              3리에서 하차
-            </p>
-            <p class="card-text12">청주여객북부정류소에서 출발시</p>
-            <p class="card-text12">
-              도보 4분 > 청주대학교 버스정류장에서
-              승차(105번,105-1번,115-1번,119번 버스) > 구성 3리에서 하차
-            </p>
-          </div>
-  
-          <div class="card-footer"></div>
-        </div>
-      </div>
-    </div>
+						</ul>
+						<ul id = "sub_3">
+							<li id = "submenu1"><a id ="submenu_content" href ="html\real4_1.html">구급상자 구성품</a></li>
+							<li id = "submenu1"><a id ="submenu_content" href ="html\real4_2.html">응급처치 기술</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real4_3.html">정전이 난 경우</a></li>
+							<li id = "submenu1"><a id ="submenu_content"href ="html\real4_4.html">유괴 예방</a></li>
+						</ul>
+						<ul id = "sub_4">
+							<li id = "submenu1"><a id ="submenu_content" href ="html\real5_1.html">화재시 소화방법</a></li>
+							<li id = "submenu1"><a id ="submenu_content" href ="html\real5_2.html">화재시 대피요령</a></li>
+							<li id = "submenu1"><a id ="submenu_content" href ="html\real5_3.html">화재시 신고요령</a></li>
+						</ul>
+					</div>
+			</div>
+		<div class = "main_wrap">
+			<div id ="main_image">
+				<img id ="mainimage" src ="images/001.png" alt ="명언">
+			</div>
+			<div id = "main_content1">
+				<h3 id ="title-mountain">대처요령[산]</h3>
+				<ul id ="content-mountain">
+					<li><a href ="html\real2_1.html"><img src ="images\snake.png" alt ="뱀"><span id ="tag1">뱀에게 물렸을때</span></a></li>
+					<li><a href ="html\real2_2.html"><img src ="images\wasp.png"><span id ="tag1">벌에게 쏘였을 때</span></a></li>
+					<li><a href ="html\real2_3.html"><img src ="images\mushroom.png"><span id ="tag1">버섯 구분법</span></a></li>
+					<li><a href ="html\real2_4.html"><img src ="images\fall.png"><span id ="tag1">산행 안전사고 발생시</span></a></li>
+				</ul>
+			</div>
+			<div id = "main_content2">
+				<h3 id ="title-sea">대처요령[바다]</h3>
+				<ul id ="content-sea">
+					<li><a href ="html\real3_1.html"><img src ="images\rescue.png"><span id ="tag1">바다에 빠진 경우</span></a></li>
+					<li><a href ="html\real3_2.html"><img src ="images\sunburn.png"><span id ="tag1">햇빛에 의한 화상</span></a></li>
+					<li><a href ="html\real3_3.html"><img src ="images\jellyfish.png"><span id = "tag1">해파리 피해</span></a></li>
+					<li><a href ="html\real3_4.html"><img src ="images\CPR.png"><span id ="tag1">심폐소생술</span></a></li>
+				</ul>
+			</div>
+			<div id = "main_content3">
+				<h3 id ="title-dailylife">대처요령[일상]</h3>
+				<ul id ="content-dailylife">
+					<li><a href ="html\real4_1.html"><img src ="images\first aid kit.png"><span id ="tag1">구급상자 구성품</span></a></li>
+					<li><a href ="html\real4_2.html"><img src ="images\first aid.png"><span id ="tag1">응급처치 기술</span></a></li>
+					<li><a href ="html\real4_3.html"><img src ="images\blackout.png"><span id ="tag1">정전이 난 경우</span></a></li>
+					<li><a href ="html\real4_4.html"><img src ="images\abduct.png"><span id ="tag1">유괴 예방</span></a></li>
+				</ul>
+			</div>
+			<div id = "main_content4">
+				<h3 id ="title-fire">대처요령[화재]</h3>
+				<ul id ="content-fire">
+					<li><a href ="html\real5_1.html"><img src ="images\fireextinquisher.png"><span id ="tag1">화재시 소화방법</span></a></li>
+					<li><a href ="html\real5_2.html"><img src ="images\evacuation.png"><span id ="tag1">화재시 대피요령</span></a></li>
+					<li><a href ="html\real5_3.html"><img src ="images\911.png"><span id ="tag1">화재시 신고요령</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class = "footer_wrap">
+			<div id = "footer_menu">
+				<ul id = "website-display">
+					<li><a target ="blank" href = "http://www.119.go.kr/Center119/main.do"><img src = "images\119안전신고센터.jpeg"></a></li>
+					<li><a target ="blank" href = "https://www.e-gen.or.kr/egen/main.do"><img src = "images\응급의료포털.jpeg"></a></li>
+					<li><a target ="blank" href = "https://www.kdca.go.kr/"><img src = "images\질병관리청.jpeg"></a></li>
+				</ul>
+			</div>
+			<div id = "footer_description"></div>
+		</div>
+	</div>
+</body>
 </html>
