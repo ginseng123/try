@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>생활 안전요령</title>
+  <link href ="..\css\real2_1.css" type="text/css" rel ="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href ="../css/real2_1mediaquery.css">
+  <script src ="..\js\real2_1.js"></script>
+</head>
+<body>
+  <div class = "wrap">   
+    <div class = "header_wrap">
+      <div id = "header_banner" onmouseover ="dropdown_out(this)">  
+      </div>
+      <div id = "header_menu">
+          <a id ="header_logo" href ="..\index.html"><img src ="..\images\logo.png" alt ="로고" onmouseover ="dropdown_out(this)"></a>
+          <ul id ="header_mainmenu" onmouseover ="dropdown(this)">
+            <li><a href = "real2_1.html">대처요령[산]</a></li>
+            <li><a href = "real3_1.html">대처요령[바다]</a></li>
+            <li><a href = "real4_1.html">대처요령[일상]</a></li>
+            <li><a href = "real5_1.html">대처요령[화재]</a></li>
+          </ul>
+        </div>
+        <div id = "mainmenu_sub" style = "display: none;" onmouseout="dropdown_out(this)" onmouseover ="dropdown(this)">
+          <div id ="void"><p id = "void_content">바로가기 메뉴</p></div>
+            <ul id = "sub_1" >
+              <li id = "submenu1"><a id ="submenu_content"href ="real2_1.html">뱀에게 물렸을때</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="real2_2.html">벌에게 쏘였을 때</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="real2_3.html">버섯 구분법</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="real2_4.html">산행안전사고 발생시</a></li>
+            </ul>
+            <ul id ="sub_2">
+              <li id = "submenu1"><a id ="submenu_content"href ="..\html\real3_1.html">바다에 빠진 경우</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="..\html\real3_2.html">햇빛에 의한 화상</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="..\html\real3_3.html">해파리 피해</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="..\html\real3_4.html">심폐소생술</a></li>
+
+            </ul>
+            <ul id = "sub_3">
+              <li id = "submenu1"><a id ="submenu_content" href ="..\html\real4_1.html">구급상자 구성품</a></li>
+              <li id = "submenu1"><a id ="submenu_content" href ="..\html\real4_2.html">응급처치 기술</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="..\html\real4_3.html">정전이 난 경우</a></li>
+              <li id = "submenu1"><a id ="submenu_content"href ="..\html\real4_4.html">유괴 예방</a></li>
+            </ul>
+            <ul id = "sub_4">
+              <li id = "submenu1"><a id ="submenu_content" href ="..\html\real5_1.html">화재시 소화방법</a></li>
+              <li id = "submenu1"><a id ="submenu_content" href ="..\html\real5_2.html">화재시 대피요령</a></li>
+              <li id = "submenu1"><a id ="submenu_content" href ="..\html\real5_3.html">회재시 신고요령</a></li>
+            </ul>
+          </div>
+      </div>
+      <div class = "main_wrap">
+      <div id = "lnb">
+        <h2 id = "lnb_title">대처요령[일상]</h2>
+        <ul id = "lnb_list">
+          <li id ="lnb_contentwrap"><a id ="lnb_content" href = "real4_1.html">1. 구급상자 구성품</a></li>
+          <li id ="lnb_contentwrap"><a id ="lnb_content" href = "real4_2.html">2. 응급처치 기술</a></li>
+          <li id ="lnb_contentwrap"><a id ="lnb_content" href = "real4_3.html">3. 정전이 난 경우</a></li>
+          <li id ="lnb_contentwrap"><a id ="lnb_content" href = "real4_4.html">4. 유괴 예방</a></li>
+        </ul>
+      </div>
+      <div id = "main_content">
+        <div id ="select_prepost">
+          <a href ="real4_3.html"><button id ="pre">◀이전</button></a>
+        </div>
+        <div id ="contenttitle">
+          <h3>유괴 예방</h3>
+          <hr>
+          <div id ="content"></div>
+        </div>  
+      </div>
+    </div>
+    <div class = "footer_wrap">
+      <div id = "footer_menu">
+        <ul id = "website-display">
+          <li><a target ="blank" href = "http://www.119.go.kr/Center119/main.do"><img src = "..\images\119안전신고센터.jpeg"></a></li>
+          <li><a target ="blank" href = "https://www.e-gen.or.kr/egen/main.do"><img src = "..\images\응급의료포털.jpeg"></a></li>
+          <li><a target ="blank" href = "https://www.kdca.go.kr/"><img src = "..\images\질병관리청.jpeg"></a></li>
+        </ul>
+      </div>
+      <div id = "footer_description"></div>
+    </div>
+  </div>
+</body>
+<script src ="..\js\real4_4(innerhtml).js"></script>
+</html>

@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*css 시작*/
+
+/*초기화*/
+ @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+html {overflow-y: scroll; margin: 0px; padding:0px;}
+body {margin:0;padding: 0;}
+li { list-style-type:none; }
+a:link, a:visited {text-decoration:none; color: black;}
+#lnb_list li:hover { color: black; }
+
+/*상단 레이아웃*/
+.header_wrap{ width: 1519.2px; height: 150px; position:relative; }
+#header_banner{width: 100%; height: 50px; border-bottom: 1px solid #030099;}
+#header_menu{display: flex; justify-content: space-between;align-items:center; width: 100%; height: 100px; border-bottom: 1px solid #030099;}
+#header_logo{ width: 303.84px; height:80%;}
+#header_menu a img { display: flex; align-items: center; width : 100%; height: 100%; }
+#header_mainmenu {width: 1215.34px ; height: 100%;display: flex; text-align:center; list-style-type: none; padding: 0;#030099 margin: 0;}
+#header_mainmenu li {width: 303.84px; height: 100%; display:flex; align-items:center; justify-content:center; border-left: 1px solid #030099; border-right: 1px solid #030099;}
+#header_mainmenu li a {width: 100%; height: 100%; display:flex;justify-content: center;align-items:center; font-size: 20px; font-family: 'Gaegu', cursive;color:#030099;}
+
+/*서브메뉴*/
+#mainmenu_sub {position: relative; z-index:10;opacity:1;background-color:white;width: 100%; height: 150px; z-index:10;border-bottom-radius: 20px;}
+#void {width:20%; height:100%; display:flex;justify-content: center; align-items: center;}
+#void_content {font-size:30px; font-weight: bolder; color:#030099; font-family: 'Noto Sans KR','맑은 고딕'; }
+#sub_1{width:20%; height:100%;margin:0;padding:0;display:flex; flex-direction:column; justify-content:center; align-items: center;}
+#sub_2{width:20%; height:100%;margin:0;padding:0;display:flex; flex-direction:column; justify-content:center; align-items: center;}
+#sub_3{width:20%; height:100%;margin:0;padding:0;display:flex; flex-direction:column; justify-content:center; align-items: center;}
+#sub_4{width:20%; height:100%;margin:0;padding:0;display:flex; flex-direction:column; justify-content:center; align-items: center;}
+#submenu1 {width: 80%; height: 16.66666%; display:flex; justify-content:center; margin: 2px; }
+#submenu_content{width:50%;height:100%; font-weight: bold;font-size: 15px;font-family: 'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto','돋움','Dotum','AppleGothic',sans-serif;}
+#submenu1:hover { border-left: 3px solid #030099; }
+
+/*메인 레이아웃 */
+.main_wrap { position:relative; z-index:5;width: 100%; height: 100%; display : flex; margin-top:100px;   }
+#lnb {width: 270px; height: 50%; display:inline-flex; flex-direction: column;justify-content: center; align-items:center; margin: 0; margin-right:30px;  }
+#lnb_title { font-family: 'Gaegu',cursive;display:flex; margin-top: 30px; padding:30px; width: 70%; height: 10%;margin:0; font-size: 30px; color: black;  border-bottom: 2px solid black;}
+#lnb_list {width:70%; height:90%; color: #4a554a;text-align:center;margin-top:50px; padding-left:0px; }
+#lnb_contentwrap { width: 100%; height: 10%; margin:15px; }
+#lnb_content {width: 100%; height: 100%; font-family:'Gaegu', cursive; color:#4a554a; font-size:20px; }
+#main_content {width:1200px; height: 100%; display:flex; flex-direction: column;justify-content: center;}
+#select_prepost {width:100%; height: 5%;}
+#content{width:80%; height: 95%; justify-content: center; margin-left: 50px;}
+
+
+/*하단 레이아웃*/
+.footer_wrap {position:relative;width: 100%; height: 200px; background-color: #bebec0;}
+#footer_menu {width: 100%; height: 100px; background-color: whitesmoke;border-top: 1px solid lightgray;}
+#website-display { width: 100%; height: 100%; display: flex; flex-direction:row; justify-content: center; align-content:center; padding:0;margin:0;}
+#website-display li {width: 10%; height: 70%; border-radius: 20px; margin-left: 20px; margin-right: 20px;}
+#website-display li>a {display:block;width: 100%; height: 100%; margin-top: 8px;}
+#website-display li>a>img {width: 100%; height: 100%; border-radius:20px; margin-top: 8px;}
+#footer_description {width: 100%; height: 100px}
+
+/* 버튼 누름 */
+#pre {float:left; width:60px; height:22px; border: 1px solid lightgray; border-radius:5px; color: ghostwhite;background-color: gray;}
+#pre:hover {cursor: grab;}
+#post { float: right; width: 60px; height:22px; border: 1px solid lightgray; border-radius: 5px; color: ghostwhite; background-color: gray;}
+#post:hover { cursor: grab; }
+
+
+
+/*반복 콘텐츠 */
+#conwrap { display:flex; justify-content: center; align-items: center; width: 100%; height: 750px; background-color: #ccd4ff; border-radius: 20px; }
+#content_wrap { width: 90%; height: 90%; background-color: ghostwhite; border-radius:20px;}
+#content_subtitle { font-family: 'Gaegu',cursive; position: relative;left:20px; width: 100%; height: 10%; margin: 0px;}
+#content_image {width: 100%; height: 280px; overflow:hidden;}
+#content_container {margin:0px; font-size: 20px; font-family: 'Gaegu',cursive;}
+#content_container_title { margin: 0px; font-size: 20px; font-family: 'Gaegu',cursive; }

@@ -1,0 +1,9 @@
+@media (max-width: 500px) {
+ #lnb { display:none;  }
+}
+@media (min-width: 500px) and (max-width:1024px) {
+
+}
+@media (min-width: 1024px) and (max-width: 1519px){
+	
+}

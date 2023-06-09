@@ -1,0 +1,9 @@
+@charset "utf-8";
+@media screen and (max-width: 944px) {
+ .wrap>.main_wrap>#lnb { display:none;  }
+ .wrap>.main_wrap>#main_content{ margin-left : 50px; }
+}
+@media screen and (min-width: 944px) and (max-width:1519px) {
+.wrap>.main_wrap>#lnb { display:flex;  }
+ 
+}
