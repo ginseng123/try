@@ -1,19 +1,19 @@
 @media (max-width: 500px) {
 	/*상단*/
-	.header_wrap {width:370px; }
-	#header_logo {width:74px; }
-	#header_mainmenu{width:296px;}
+	.header_wrap {width:490px; }
+	#header_logo {width:99px; }
+	#header_mainmenu{width:391px;}
 	#header_mainmenu li a {font-size:5px;}
 	#submenu_content{font-size:5px;}
 	/*메인*/
-	#main_image {width:370px;}
-	#main_content1 {width:370px;}
-	#main_content2 {width:370px;}
-	#main_content3 {width:370px;}
-	#main_content4 {width:370px;}
+	#main_image {width:490px;}
+	#main_content1 {width:490px;}
+	#main_content2 {width:490px;}
+	#main_content3 {width:490px;}
+	#main_content4 {width:490px;}
 	/*하단*/
-	.footer_wrap {width:370px;}
-	#footer_menu {width:370px;}
+	.footer_wrap {width:490px;}
+	#footer_menu {width:490px;}
 	
 }
 @media (min-width: 500px) and (max or (max-width:1024px) {
