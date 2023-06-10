@@ -1,19 +1,25 @@
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 	/*상단*/
-	.header_wrap {width:490px; }
-	#header_logo {width:99px; }
-	#header_mainmenu{width:391px;}
-	#header_mainmenu li a {font-size:5px;}
-	#submenu_content{font-size:5px;}
+	.header_wrap {width:390px; }
+	#header_logo {width:78px; }
+	#header_mainmenu{width:312px;}
 	/*메인*/
-	#main_image {width:490px;}
-	#main_content1 {width:490px;}
-	#main_content2 {width:490px;}
-	#main_content3 {width:490px;}
-	#main_content4 {width:490px;}
+	#main_image {width:390px;}
+	#main_content1 {width:390px;}
+	content-mountain {width:390px;}
+	content-mountain li{width: 65px;}
+	#main_content2 {width:390px;}
+	content-sea {width:390px;}
+	content-sea li{width: 65px;}
+	#main_content3 {width:390px;}
+	content-dailylife {width:390px;}
+	content-dailylife li{width: 65px;}
+	#main_content4 {width:390px;}
+	content-fire {width:390px;}
+	content-fire li{width: 65px;}
 	/*하단*/
-	.footer_wrap {width:490px;}
-	#footer_menu {width:490px;}
+	.footer_wrap {width:390px;}
+	#footer_menu {width:390px;}
 	
 }
 @media (min-width: 500px) and (max or (max-width:1024px) {
