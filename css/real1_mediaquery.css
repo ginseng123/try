@@ -1,7 +1,22 @@
-@media (max-width: 500px) {
- #lnb { display:none;  }
+@media (max-width: 375px) and (max-height: 740px){
+	/*상단*/
+	.header_wrap {width:370px; }
+	#header_logo {width:74px; }
+	#header_mainmenu{width:296px;}
+	#header_mainmenu li a {font-size:5px;}
+	#submenu_content{font-size:5px;}
+	/*메인*/
+	#main_image {width:370px;}
+	#main_content1 {width:370px;}
+	#main_content2 {width:370px;}
+	#main_content3 {width:370px;}
+	#main_content4 {width:370px;}
+	/*하단*/
+	.footer_wrap {width:370px;}
+	#footer_menu {width:370px;}
+	
 }
-@media (min-width: 500px) and (max-width:1024px) {
+@media (min-width: 500px) and (max or (max-width:1024px) {
 
 }
 @media (min-width: 1024px) and (max-width: 1519px){
