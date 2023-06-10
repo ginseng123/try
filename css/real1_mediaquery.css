@@ -1,4 +1,4 @@
-@media (max-width: 375px) and (max-height: 740px){
+@media (max-width: 375px) {
 	/*상단*/
 	.header_wrap {width:370px; }
 	#header_logo {width:74px; }
